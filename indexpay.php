@@ -20,6 +20,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="styleboot/js/bootstrap.min.js"></script>
+    <script src="payment.js"></script>
     <style>
         a:hover{
             background: #00C1FE;
@@ -63,36 +64,48 @@
       </div>
       <div class="modal-body ">
       <!-- <h2  style="text-align: center;">Payment Details</h2> -->
-        <form action="#" method="POST">
+        <form action="#" method="POST" name="fomepayment" onsubmit=" return testffpaymnet()">
             <label  class="label-class ">
                 Nom:
-                <input type="text" name="nome" minlength="5" maxlength="15">
+                <input type="text" name="nome" minlength="5" maxlength="15"> <br>
+                <span  id="nom" style="color: red; font-weight: bold;"></span> 
+
             </label>
             <br><br>
             <label    class="label-class">
                 Payment Schedule :
-                <input type="number" name="payment" minlength="5" maxlength="15"  >
+                <input type="number" name="payment" minlength="5" maxlength="15"  > <br>
+                <span  id="paymentt" style="color: red; font-weight: bold;"></span> 
+
             </label>
             <br><br>
             <label class="label-class">
             Bill Number :
-                <input type="number" name="bill"  minlength="5" maxlength="15">
+                <input type="number" name="bill"  minlength="5" maxlength="15"> <br>
+                <span  id="billl" style="color: red; font-weight: bold;"></span> 
+
             </label><br><br>
 
             <label class="label-class">
                 Amount Paid:
-                <input type="number" name="amount" minlength="5" maxlength="15" >
+                <input type="number" name="amount" minlength="5" maxlength="15" > <br>
+                <span  id="amountt" style="color: red; font-weight: bold;"></span> 
+
             </label>
                 <?php //echo $enroll; ?>
                 <br><br>
             <label class="label-class">
             Balance amount:
-                <input type="number" name="balance" minlength="5" maxlength="15" >
+                <input type="number" name="balance" minlength="5" maxlength="15" > <br>
+                <span  id="balancee" style="color: red; font-weight: bold;"></span> 
+
             </label>
             <br><br>
             <label class="label-class">
                 Date :
-                <input type="date" name="date" >
+                <input type="date" name="date" > <br>
+                <span  id="datee" style="color: red; font-weight: bold;"></span> 
+
             </label>
             <br><br>
             <div class="modal-footer">

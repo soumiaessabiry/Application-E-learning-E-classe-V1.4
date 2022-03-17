@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="inscription.css"> -->
     <script src="styleboot/js/bootstrap.min.js"></script>
+    <script src="cours.js"></script>
     <style>
         .btn:hover{
             background-color: #00C1FE;
@@ -61,26 +62,30 @@
       </div>
       <div class="modal-body ">
         
-            <form class="conainer" action="" method="POST" >
+            <form class="conainer" action="" method="POST" name="formaddcourse" onsubmit=" return testffcour()">
                 <label  class="label-class">
                 Nom de langage:
-                    <input type="text" name="nom" minlength="3" maxlength="15" >
+                    <input type="text" name="nom" minlength="3" maxlength="15" > <br>
+                    <span style="color: red; font-weight:bold " id="nome"></span>
                 </label>
                 
                 <br><br>
                 <label    class="label-class">
                     Duree de coure :
-                    <input type="text" name="duree" minlength="2" maxlength="8" >
+                    <input type="text" name="duree" minlength="2" maxlength="8" > <br>
+                    <span style="color: red; font-weight:bold" id="dureec"></span>
                 </label>
                 <br><br>
                 <label class="label-class">
                     Discription :
-                    <input type="text" name="discription" minlength="5" maxlength="20" >
+                    <input type="text" name="discription" minlength="5" maxlength="20" > <br>
+                    <span style="color: red; font-weight:bold" id="discriptione"></span>
                 </label><br><br>
 
                 <label class="label-class">
                     Prix:
-                    <input  type="number" name="prix" minlength="1" maxlength="15">
+                    <input  type="number" name="prix" minlength="1" maxlength="15"> <br>
+                    <span style="color: red; font-weight:bold" id="prixe"></span>
                 </label>	
                 <br><br>
                 <div class="modal-footer">

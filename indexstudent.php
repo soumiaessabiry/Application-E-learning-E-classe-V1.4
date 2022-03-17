@@ -18,6 +18,7 @@
             <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
             <script src="styleboot/js/bootstrap.min.js"></script>
+			<script src="student.js"></script>
 			<style>
 			a:hover{
 					background: #00C1FE;
@@ -64,32 +65,35 @@
 					</div>
 					<div class="modal-body">
 					   <h2  style="text-align: center;">Add new student</h2>
-						<form action="#" method="POST">
+						<form action="#" method="POST" name="formstudent" onsubmit=" return testffstuden()">
 							<label  class="label-class">
 								Nom:
-								<input type="text"  name="nome" >
+								<input type="text"  name="nome" minlength="5" maxlength="15"  ><br>
+								<span  id="nomee" style="color: red; font-weight: bold;"></span> 
 							</label>
-							<?php //echo $nom; ?>
 							<br><br>
 							<label    class="label-class">
 								Email :
-								<input type="email" name="email"  >
+								<input type="email" name="email" minlength="5" maxlength="15" ><br>
+								<span  id="emaile" style="color: red; font-weight: bold;"></span> 
 							</label>
 							<br><br>
 							<label class="label-class">
 								Phone :
-								<input type="text" name="phone" >
+								<input type="number" name="phone" minlength="10" maxlength="10" ><br>
+								<span  id="phonee" style="color: red; font-weight: bold;"></span> 
 							</label><br><br>
 
 							<label class="label-class">
 								Enroll number:
-								<input type="text" name="enroll" >
+								<input type="number" name="enroll" minlength="1" ><br>
+								<span  id="enrolle" style="color: red; font-weight: bold;"></span> 
 							</label>
-								<?php //echo $enroll; ?>
 								<br><br>
 							<label class="label-class">
 								Date of admossion:
-								<input type="date" name="date" >
+								<input type="date" name="date" ><br>
+								<span  id="datee" style="color: red; font-weight: bold;"></span> 
 							</label>
 							<br><br>
 							<div class="modal-footer">
