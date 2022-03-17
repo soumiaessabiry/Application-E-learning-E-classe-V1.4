@@ -49,10 +49,7 @@
             }else {
                 "error";
             }
-            
-        }
-
-   
+        }   
     ?>
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -67,23 +64,23 @@
             <form class="conainer" action="" method="POST" >
                 <label  class="label-class">
                 Nom de langage:
-                    <input type="text" name="nom" >
+                    <input type="text" name="nom" minlength="3" maxlength="15" >
                 </label>
                 
                 <br><br>
                 <label    class="label-class">
                     Duree de coure :
-                    <input type="text" name="duree"  >
+                    <input type="text" name="duree" minlength="2" maxlength="8" >
                 </label>
                 <br><br>
                 <label class="label-class">
                     Discription :
-                    <input type="text" name="discription" >
+                    <input type="text" name="discription" minlength="5" maxlength="20" >
                 </label><br><br>
 
                 <label class="label-class">
                     Prix:
-                    <input type="text" name="prix" >
+                    <input  type="number" name="prix" minlength="1" maxlength="15">
                 </label>	
                 <br><br>
                 <div class="modal-footer">

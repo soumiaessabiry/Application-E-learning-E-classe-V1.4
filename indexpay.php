@@ -66,28 +66,28 @@
         <form action="#" method="POST">
             <label  class="label-class ">
                 Nom:
-                <input type="text" name="nome" >
+                <input type="text" name="nome" minlength="5" maxlength="15">
             </label>
             <br><br>
             <label    class="label-class">
                 Payment Schedule :
-                <input type="text" name="payment"  >
+                <input type="number" name="payment" minlength="5" maxlength="15"  >
             </label>
             <br><br>
             <label class="label-class">
             Bill Number :
-                <input type="text" name="bill" >
+                <input type="number" name="bill"  minlength="5" maxlength="15">
             </label><br><br>
 
             <label class="label-class">
                 Amount Paid:
-                <input type="text" name="amount" >
+                <input type="number" name="amount" minlength="5" maxlength="15" >
             </label>
                 <?php //echo $enroll; ?>
                 <br><br>
             <label class="label-class">
             Balance amount:
-                <input type="text" name="balance" >
+                <input type="number" name="balance" minlength="5" maxlength="15" >
             </label>
             <br><br>
             <label class="label-class">

@@ -31,30 +31,30 @@
                 <h1 >Inscription</h1>
                     <label  class="label-class">
                         First Name: 
-                        <input type="text" class="form-control form-control-lg" name="firstname"   >
+                        <input type="text" class="form-control form-control-lg" name="firstname" minlength="3" maxlength="20"   >
                         <span  id="firstname" style="color: red; font-weight: bold;"></span>
                     </label>
                     <br><br>
                     <label  class="label-class">
                         last Name: 
-                        <input type="text" class="form-control form-control-lg" name="lastname"  id="lastname" >
+                        <input type="text" class="form-control form-control-lg" name="lastname"  id="lastname"  minlength="3" maxlength="20">
                         <span  id="lastnameid" style="color: red; font-weight: bold;"></span>
                     </label>
                     <br><br>
                     <label    class="label-class">
                         Email :
-                        <input type="email" class="form-control form-control-lg" name="email" id="email"  >
+                        <input type="email" class="form-control form-control-lg" name="email" id="email" minlength="8" maxlength="40" >
                         <span  id="emailid" style="color: red; font-weight: bold;"></span>
                     </label>
                     <br><br>
                     <label class="label-class">
                         Password :
-                        <input type="password" class="form-control form-control-lg" name="password"   id="password">
+                        <input type="password" class="form-control form-control-lg" name="password"   id="password" minlength="5" maxlength="15">
                         <span  id="passwordid" style="color: red; font-weight: bold;"></span>
                     </label> <br><br>
                     <label class="label-class">
                          confirm Password :
-                        <input type="password" class="form-control form-control-lg" name="confpassword"   id="confpassword"  >
+                        <input type="password" class="form-control form-control-lg" name="confpassword"   id="confpassword" minlength="5" maxlength="15" >
                         <span  id="confpasswordid" style="color: red; font-weight: bold;"></span>
                     </label> <br><br>
                     <span  style="font-weight: bold">J'accpete</span> 
