@@ -1,0 +1,21 @@
+button{
+    color: black !important;
+  justify-content: space-around !important;
+  
+  margin-bottom: 10px !important;
+  margin-top: 20px !important;
+
+}
+.log{
+    margin-top: 100px !important;
+}
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+a:hover{
+  background: #00C1FE !important;
+}
+body{
+  overflow-y:visible !important;
+}

@@ -1,0 +1,14 @@
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+a:hover{
+    background: #00C1FE !important;
+}
+.btn{
+    color:white !important;
+    font-weight: bold !important;
+  }
+  .phov:hover{
+    background:rgba(236, 228, 228, 0.198) !important;
+  }

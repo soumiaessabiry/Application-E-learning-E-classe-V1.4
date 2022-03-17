@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right,#0dcaf0,#dee4b0) !important;
+ 
+}
+
+.btn{
+    color:white !important;
+    color:rgba(224, 22, 22, 0.055) !important;
+}
+
+.forgot{
+   
+    border:3px solid darkviolet;
+    height: 34px;
+    padding: 0px !important;
+    max-width: 300px;
+    margin: auto;
+    
+}
+form{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 40px !important;
+    text-shadow: gray !important;
+}
+a{
+    text-decoration: none !important;
+    color:#0dcaf0 !important;
+    color:white !important;
+        font-weight: bold !important;
+}
+/* a:hover{
+    background-color: yellowgreen !important;
+} */
+/* button{
+    color: white !important;
+} */
