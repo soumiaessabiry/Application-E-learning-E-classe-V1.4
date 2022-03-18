@@ -8,7 +8,7 @@
                 $password=md5($_POST['password']);//hach
                 $query="SELECT * FROM `comptes` WHERE email='$email' AND  password='$password'";
                 $user = mysqli_query($conn,$query);
-                $compte = mysqli_fetch_assoc($user);//mysqli_result::fetch_assoc -- mysqli_fetch_assoc — Récupère une ligne de résultat sous forme de tableau associatif
+                $compte = mysqli_fetch_assoc($user);// mysqli_fetch_assoc — Récupère une ligne de résultat sous forme de tableau associatif
                 if (mysqli_num_rows($user) != 0 ) {//Retourne le nombre de lignes affectées par la dernière opération MySQL
                         $_SESSION['first_name']=$compte['first_name'];
                         $_SESSION['last_name']=$compte['last_name'];
@@ -41,9 +41,6 @@
 							background: #00C1FE;
 					}
             </style>
-            <!-- Java scripte validation de forme  -->
-                   
-           
         </head>
       <body>
         <div class="container mt-5 ">

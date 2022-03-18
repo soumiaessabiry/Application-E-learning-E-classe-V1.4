@@ -8,7 +8,9 @@
         document.getElementById("lastnameid").innerHTML="Ce champt ne peut pas etre vide";
         return false;  
     }
-    if (document.forminscription.email.value =="" ) {
+   
+
+        if (document.forminscription.email.value =="" ) {
         document.getElementById("emailid").innerHTML="Ce champt ne peut pas etre vide";
       return false;       
     }

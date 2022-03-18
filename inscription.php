@@ -74,6 +74,8 @@
                 $queryem="SELECT`email` FROM `comptes` WHERE  email='$EMAIL'"; 
                 $result=mysqli_query($conn,$queryem);   
                     if (mysqli_num_rows($result)==0) {
+                            if (preg_match("/^[a-zA-Z0-9]+@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*$/",$EMAIL)) {
+                            $nameErr = "Only letters and white space allowed";
                          $query="INSERT INTO `comptes`(`first_name`, `last_name`, `email`, `password`) VALUES ('$FIRSTNAME','$LASTNAME','$EMAIL','$PASSWORD')";
                             if (mysqli_query($conn,$query)) {
                                 header("Refresh:3;url=index.php");
@@ -85,6 +87,14 @@
                                     showConfirmButton: false,
                                     timer: 1500})
                                     </script>";
+                                } }
+                                else{
+                                    echo"<script>
+                                    Swal.fire({
+                                    icon: 'error',
+                                    title: 'invalid format !!!',
+                                    })
+                                  </script>";
                                 }
                     }else{
                         echo"<script>
