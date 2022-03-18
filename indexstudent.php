@@ -74,7 +74,7 @@
 							<br><br>
 							<label    class="label-class">
 								Email :
-								<input type="email" name="email" minlength="5" maxlength="15" ><br>
+								<input type="email" name="email"  maxlength="40" ><br>
 								<span  id="emaile" style="color: red; font-weight: bold;"></span> 
 							</label>
 							<br><br>
